@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Geometry</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.13/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="m-8">
+    <header></header> 
+    <main>
+        <!-- main container -->
+        <di class="flex flex-col md:flex-row">
+            <!-- shape contailner -->
+            <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
+                <!-- tringle -->
+                <div class="card bg-base-100 w-96 shadow-xl text-center">
+                    <figure>
+                      <img
+                        src="/images/triangle.png"
+                        alt="Shoes" />
+                    </figure>
+                    <div class="card-body">
+                      <h2 class="card-title ">Tringle</h2>
+                      <p>Area(A)=0.5*b*h</p>
+
+                      
+
+
+                      <div class="w-full">
+                        <input id="traingle-base" class="w-24 bg-slate-300 p-2 text-2xl rounded-sm" type="text" placeholder="base"><span class="mr-2 ml-2">cm</span>
+                        <input id="traingle-height" class="w-24 bg-slate-300 p-2 text-2xl rounded-sm" type="text" placeholder="height"><span class="mr-2 ml-2">cm</span>
+                      </div>
+
+                      <div>
+                        <p class="text-2xl"> Area:
+                            <span id="tringle-area"></span><span> cm<sup>2</sup></span>
+                        </p>
+                      </div>
+                      <div class="card-actions ">
+                        <button onclick="calculateArea()" class="btn btn-primary w-full">Calculate Area</button>
+                      </div>
+                      
+
+
+
+                    </div>
+                  </div>
+                  <!-- rectangle -->
+                <div class="card bg-base-100 w-96 shadow-xl">
+                    <figure>
+                      <img
+                        src="/images/rectangle.png"
+                        alt="Shoes" />
+                    </figure>
+                    <div class="card-body text-center">
+                      <h2 class="card-title">Rectangle</h2>
+                      <p>Area (A) = w*I</p>
+
+                      
+
+                      <div>
+                        <input type="text" id="ractangler-length" class="w-24 bg-slate-300 p-2 text-2xl rounded-sm" placeholder="length"> <span>cm</span>
+                        <input type="text" id="rectangler-width" class="w-24 bg-slate-300 p-2 text-2xl rounded-sm" placeholder="width"> <span>cm</span>
+                      </div>
+
+                      <div>
+                        <p class="text-2xl"> Area:<span id="ractangle-area"></span><span> cm<sup>2</sup></span>
+                        </p>
+                      </div>
+
+
+
+                      <div class="card-actions justify-end">
+                        <button onclick="calculateRactangleArea()" class="btn btn-primary w-full">Calculate</button>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Parallelogram -->
+                <div class="card bg-base-100 w-96 shadow-xl">
+                    <figure>
+                      <img
+                        src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+                        alt="Shoes" />
+                    </figure>
+                    <div class="card-body">
+                      <h2 class="card-title">Shoes!</h2>
+                      <p>If a dog chews shoes whose shoes does he choose?</p>
+                      <div class="card-actions justify-end">
+                        <button class="btn btn-primary">Buy Now</button>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Rhombus -->
+                <div class="card bg-base-100 w-96 shadow-xl">
+                    <figure>
+                      <img
+                        src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+                        alt="Shoes" />
+                    </figure>
+                    <div class="card-body">
+                      <h2 class="card-title">Shoes!</h2>
+                      <p>If a dog chews shoes whose shoes does he choose?</p>
+                      <div class="card-actions justify-end">
+                        <button class="btn btn-primary">Buy Now</button>
+                      </div>
+                    </div>
+                  </div>
+
+
+            </div>
+            <!-- Area calculet container -->
+            <div class="w-93 ">
+                <h1 class="text-3xl">Area Calculation</h1>
+                <div>
+                  <p class="text-2xl"> Area:
+                      <span id="tringle-area"></span><span> cm<sup>2</sup></span>
+                  </p>
+                </div>
+
+            </div>
+        </di>
+    </main>
+    <footer></footer>
+
+    <script src="/script/scrip.js"></script>
+  </body>
+</html>
